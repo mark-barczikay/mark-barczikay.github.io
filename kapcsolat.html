@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapcsolat - A Dolomitok Varázslatos Világa</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="print.css" media="print">
+    <link id="hc-style" rel="stylesheet" href="hc.css" disabled>
+</head>
+<body>
+    <a href="#fokomponens" class="skip-link">Ugrás a fő tartalomra</a>
+    
+    <header class="main-header with-bg">
+        <h1>Kapcsolat</h1>
+        <button id="hc-toggle">Nagy kontrasztú mód be/ki</button>
+    </header>
+
+    <div class="layout-container">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Kezdőlap</a></li>
+                <li><a href="elovilag.html">Élővilág és Túrák</a></li>
+                <li><a href="kapcsolat.html" class="active">Kapcsolat</a></li>
+            </ul>
+        </nav>
+
+        <main id="fokomponens">
+            <article class="form-container">
+                <h2>Tervezd Meg Velünk a Túrádat!</h2>
+                <p>Kérdésed van, vagy segítségre van szükséged az utazásod megtervezéséhez? Töltsd ki az alábbi űrlapot!</p>
+                
+                <form action="mailto:mark.barczikay@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="nev_mezo">Név:</label>
+                        <input type="text" id="nev_mezo" name="nev" maxlength="50" required placeholder="Pl.: Madár Péter">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="uzenet_mezo">Üzenet/Kérdés:</label>
+                        <textarea id="uzenet_mezo" name="uzenet" rows="5" maxlength="500" required placeholder="Írd ide a kérdésedet..."></textarea>
+                    </div>
+
+                    <fieldset class="form-group">
+                        <legend>Tapasztalati Szint:</legend>
+                        <div class="radio-group">
+                            <input type="radio" id="szint_kezdo" name="tapasztalat" value="kezdo" required>
+                            <label for="szint_kezdo">Kezdő</label>
+                            
+                            <input type="radio" id="szint_halado" name="tapasztalat" value="halado">
+                            <label for="szint_halado">Haladó</label>
+                            
+                            <input type="radio" id="szint_profi" name="tapasztalat" value="profi">
+                            <label for="szint_profi">Profi</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="hirlevel_mezo" name="hirlevel" value="igen" checked>
+                        <label for="hirlevel_mezo">Feliratkozás a Hírlevélre</label>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn-submit">Üzenet Küldése</button>
+                        <button type="reset" class="btn-reset">Űrlap Törlése</button>
+                    </div>
+                </form>
+            </article>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 A Dolomitok Varázslatos Világa</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
